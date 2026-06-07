@@ -1,0 +1,49 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Penguin-Inspired Optimization: Escaping Local Minima via Momentum-Based Slope Adaptation}
+
+\author{\IEEEauthorblockN{Iga Narendra Pramawijaya}
+\IEEEauthorblockA{\textit{School of Electrical Engineering} \\
+\textit{Telkom University}\\
+Bandung, Indonesia \\
+iga.narendra@gmail.com}
+\and
+\IEEEauthorblockN{Amanda}
+\IEEEauthorblockA{\textit{Research Assistant} \\
+\textit{SIMO Tech}\\
+Bali, Indonesia}
+}
+
+\maketitle
+
+\begin{abstract}
+We propose Penguin-Inspired Optimization (PIO), a novel meta-heuristic optimizer for classical machine learning. Inspired by the biological observation that penguins maintain momentum when ascending slopes to conserve energy, PIO adaptively increases the learning rate when the gradient indicates an upward slope in the loss landscape. This mechanism allows the optimizer to "escape" local minima with higher efficiency than standard gradient descent methods.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Machine learning, Optimization, Meta-heuristics, Local minima, Learning rate adaptation.
+\end{IEEEkeywords}
+
+\section{Introduction}
+Escaping local minima is a fundamental challenge in non-convex optimization. While momentum-based methods like Adam provide some relief, they often rely on fixed or decaying learning rates.
+
+\section{Penguin-Inspired Optimization}
+The core idea of PIO is to treat the loss landscape as a physical terrain where "uphill" movement requires an energy boost.
+
+\section{Conclusion}
+PIO offers a promising direction for improving the convergence of deep learning models in complex loss landscapes.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
