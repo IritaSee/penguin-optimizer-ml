@@ -35,10 +35,11 @@ Machine learning, Optimization, Meta-heuristics, Local minima, Learning rate ada
 \end{IEEEkeywords}
 
 \section{Introduction}
-Escaping local minima is a fundamental challenge in non-convex optimization. While momentum-based methods like Adam provide some relief, they often rely on fixed or decaying learning rates.
+Escaping local minima is a fundamental challenge in non-convex optimization. While momentum-based methods like Adam provide some relief, they often rely on fixed or decaying learning rates. Meta-heuristic algorithms inspired by biological systems have shown significant potential in navigating complex search spaces. Within the domain of penguin-inspired optimization, several approaches have been proposed. The Penguins Search Optimization Algorithm (PeSOA) utilizes the diving and hunting patterns of penguins to explore multi-dimensional spaces \cite{gheraibia2013pesoa}. Similarly, the Emperor Penguin Optimizer (EPO) and Emperor Penguins Colony (EPC) algorithms leverage the social huddling and spiral movement behaviors of colonies to maintain a balance between exploration and exploitation \cite{dhiman2018epo, harifi2019epc}. Furthermore, the Gentoo Penguin Algorithm (GPA) focuses on the hydrodynamic efficiency of the species to optimize power loss in electrical systems \cite{palappan2020gpa}.
 
-\section{Penguin-Inspired Optimization}
-The PIO algorithm treats the loss landscape as a physical terrain where "uphill" movement is not a failure, but a necessary maneuver to escape local traps.
+Despite these advancements, existing penguin-inspired optimizers primarily model aquatic or stationary social behaviors. They largely ignore the terrestrial energy dynamics of penguins navigating steep Antarctic terrain, where the "uphill right of way" is a critical survival rule to conserve metabolic momentum \cite{sharpe2026penguin}. In classical machine learning, the loss landscape is often analogous to such rugged terrain. Standard optimizers frequently stall when encountering "uphill" segments (increasing loss) required to escape local minima.
+
+We propose Penguin-Inspired Optimization (PIO), a novel meta-heuristic optimizer that fills this research gap. Inspired by the biological observation that penguins maintain momentum when ascending slopes to conserve energy, PIO adaptively increases the learning rate when the gradient indicates an upward slope in the loss landscape. This mechanism allows the optimizer to "escape" local minima with higher efficiency than standard gradient descent methods by protecting the "Context Momentum" of the optimization path.
 
 \subsection{Terrain Altitude and Gradient}
 In the context of classical ML, we define the "Altitude" $H_t$ at iteration $t$ as the current value of the objective function (loss):
